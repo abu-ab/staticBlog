@@ -1,0 +1,146 @@
+.header {
+    width: 100%;
+    background: #212121;
+    min-height: 58px;
+    box-shadow: 2px 2px 5px #757575;
+}
+
+.header-container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header-title {
+    float: left;
+    height: 58px;
+    width: 150px;
+    font-weight: bold;
+    font-family: 'KaiTi';
+    font-size: 30px;
+    line-height: 58px;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+.header-nav {
+    float: left;
+    width: 80%;
+    text-align: center;
+    display: block;
+}
+
+.header-nav li {
+    display: inline-block;
+    height: 58px;
+    width: 116px;
+    text-align: center;
+    line-height: 58px;
+}
+
+.header-nav li:hover {
+    background: #757575;
+}
+
+.header-nav li:hover a {
+    color: #ffffff;
+}
+
+.header-nav li i {
+    font-size: 18px;
+    color: #ffffff;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+
+.header-nav li a {
+    vertical-align: middle;
+    color: #BDBDBD;
+}
+
+.header-logo {
+    width: auto;
+    height: 58px;
+    float: right;
+}
+
+.header-logo-image {
+    border-radius: 50%;
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    margin-top: 9px;
+}
+
+.header-menu {
+    float: right;
+    display: none;
+}
+
+.header-menu i {
+    color: #ffffff;
+    font-size: 29px;
+    padding: 20px;
+    line-height: 58px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1280px) and (min-width:768px) {
+    .header-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        display: none;
+    }
+
+    .header-nav {
+        width: 80%;
+        display: block;
+    }
+
+    .header-logo {
+        display: block;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        display: none;
+    }
+
+    .header-nav {
+        float: none;
+        width: 100%;
+        display: none;
+    }
+
+    .header-nav li {
+        display: inline-block;
+        height: 58px;
+        width: 100%;
+        text-align: left;
+        line-height: 58px;
+    }
+
+    .header-logo {
+        float: left;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .block {
+        display: block;
+    }
+}
